@@ -1,0 +1,89 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f5f7;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    color: #172b4d;
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #5e6c84;
+    font-size: 0.9rem;
+}
+
+#chat-container {
+    background: white;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#chat-box {
+    border: 1px solid #dfe1e6;
+    border-radius: 4px;
+    height: 300px;
+    overflow-y: auto;
+    padding: 15px;
+    background-color: #fafbfc;
+    margin-bottom: 15px;
+}
+
+#chat-box p {
+    margin: 5px 0;
+    padding: 8px 12px;
+    border-radius: 15px;
+    background: #e9ecef;
+    display: inline-block;
+    clear: both;
+    max-width: 85%;
+}
+
+#chat-box p.jira-ticket {
+    background: #deebff;
+    color: #0747a6;
+    border-left: 4px solid #0052cc;
+    border-radius: 4px;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #dfe1e6;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input[type="text"]:focus {
+    border-color: #0052cc;
+}
+
+button {
+    background-color: #0052cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #0747a6;
+}

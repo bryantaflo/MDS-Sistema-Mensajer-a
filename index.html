@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MDS - Sistema de Mensajería Individual</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -13,13 +14,13 @@
 
     <main>
         <section id="chat-container">
-            <div id="chat-box" style="border: 1px solid #ccc; height: 200px; padding: 10px; margin-bottom: 10px; background-color: #f9f9f9;">
-                <p><strong>Sistema:</strong> Bienvenido al módulo de mensajería del MVP.</p>
+            <div id="chat-box">
+                <p><strong>Sistema:</strong> Bienvenido al módulo de mensajería del MVP. Escribe el código de un ticket (Ej: MDS-1) para consultar Jira.</p>
             </div>
             
             <form id="message-form" onsubmit="return false;">
-                <input type="text" id="user-message" placeholder="Escribe tu mensaje aquí..." style="width: 70%; padding: 5px;">
-                <button type="submit" style="padding: 5px 10px;">Enviar</button>
+                <input type="text" id="user-message" placeholder="Escribe tu mensaje o ticket de Jira aquí...">
+                <button type="submit">Enviar</button>
             </form>
         </section>
     </main>
@@ -27,5 +28,7 @@
     <footer>
         <p>&copy; 2026 Universidad del Valle - Metodologías de Desarrollo de Software</p>
     </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
